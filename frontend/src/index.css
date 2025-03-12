@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  margin: 0;
+
+  color: white;
+}
+body {
+  @apply bg-black;
+  @apply font-sans;
+  @apply text-white;
+  @apply antialiased;
+}
+.slick-next {
+  right: 10px;
+  color: black !important;
+  font-size: 20px !important;
+  border-radius: 7px;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 2;
+  color: black !important;
+  border-radius: 7px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+}
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.customShadow {
+  box-shadow: 5px 5px 10px rgba(97, 98, 96, 0.2);
+}
+
+.userTable {
+  @apply pb-4;
+}
+.userTable th {
+  @apply text-base font-medium font-bold underline;
+}
+
+.userTable td {
+  @apply p-[6px] text-base font-medium  text-center;
+}
+
+.paperEffect {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-size: 40px 38px;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #444cf7,
+    #444cf7 1px,
+    #e5e5f7 1px,
+    #e5e5f7
+  );
+}
+
+.glass1x {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(75, 74, 74, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(91, 89, 89, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+}
+
+.blackGlass {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(75, 74, 74, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(91, 89, 89, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+}
+
+.btn {
+  @apply rounded-full  bg-empressOrange hover:bg-empressOrangeHover text-white;
+}
+
+.box {
+  @apply mx-auto  w-full  shadow-md  bg-white rounded-lg;
+}
+.fullScreenGlass {
+  @apply fixed top-0 bottom-0 left-0 right-0 w-full h-full z-50 justify-between items-center flex glass;
+}
+.purp {
+  @apply [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] min-h-[calc(100vh-100px)] min-w-full;
+}
+
+.menuGlass {
+  background: linear-gradient(
+    135deg,
+    rgba(95, 94, 94, 0.1),
+    rgba(213, 211, 211, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.sideSpace {
+  @apply container lg:px-20 md:px-20  px-6 max-w-[100vw];
+}
